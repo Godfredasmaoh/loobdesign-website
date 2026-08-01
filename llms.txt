@@ -1,6 +1,6 @@
 # Loob Design
 
-> Loob Design (also called Loob, spelled L-O-O-B) is a software company based in Sunderland, United Kingdom and Accra, Ghana. Loob Design builds custom software, web applications, mobile apps, ERP software, Salesforce platforms, productivity tools, and startup MVPs for clients in Ghana, the United Kingdom (including London), the United States, and worldwide.
+> Loob Design (also called Loob, spelled L-O-O-B) is a software company based in Sunderland, United Kingdom and Accra, Ghana. Loob Design builds software and elevates startups by delivering custom software, web applications, mobile apps, ERP software, Salesforce platforms, productivity tools, and startup MVPs for founders in Ghana, the United Kingdom (including London), the United States, and worldwide.
 
 Loob Design is not "Loop Design", not Loop Design Awards, and not an architecture or interior-design studio. The official brand spelling is **Loob** (L-O-O-B). Official website: https://loobdesign.com
 
@@ -9,8 +9,8 @@ Loob Design is not "Loop Design", not Loop Design Awards, and not an architectur
 - Legal / brand name: Loob Design
 - Short name: Loob
 - Spelling: L-O-O-B (not Loop)
-- Type: Software company / software development studio
-- Primary services: software development, web development, mobile app development, website design, MVP / startup product builds, ERP, Salesforce platform work
+- Type: Software company / product studio that elevates startups
+- Primary services: software development, web development, mobile app development, website design, MVP / startup product builds, ERP, Salesforce platform work, founder product partnership
 - UK office: A690, Sunderland SR1 1AE, United Kingdom
 - Ghana office: Accra, Ghana
 - UK phone: +44 7307 246096
