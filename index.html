@@ -137,32 +137,22 @@
                                             <a href="services.html">Services</a>
                                         </li>
                                         <li>
+                                            <a href="products.html">Products</a>
+                                        </li>
+                                        <li>
                                             <a href="portfolio.html">Works</a>
                                         </li>
-                                        <li class="has-dropdown">
-                                            <a href="#">Shop</a>
-                                            <ul class="at-submenu submenu">
-                                                <li><a href="product-archive.html">Products Listing</a></li>
-                                                <li><a href="product-details.html">Product Details</a></li>
-                                                <li><a href="product-cart.html">Cart</a></li>
-                                                <li><a href="product-checkout.html">Checkout</a></li>
-                                            </ul>
+                                        <li>
+                                            <a href="product-archive.html">Merch</a>
                                         </li>
-                                        <li class="has-dropdown">
-                                            <a href="#">News</a>
-                                            <ul class="at-submenu submenu">
-                                                <li><a href="archive-1.html">Blog 01</a></li>
-                                                <li><a href="archive-2.html">Blog 02</a></li>
-                                                <li><a href="archive-3.html">Blog 03</a></li>
-                                                <li><a href="archive-4.html">Blog 04</a></li>
-                                                <li><a href="blog-details.html">Post Details</a></li>
-                                            </ul>
+                                        <li>
+                                            <a href="archive-3.html">News</a>
                                         </li>
                                         <li><a href="contact.html">Contact</a></li>
                                     </ul>
                                 </nav>
                             </div>
-                            <div class="at-main-menu menu-light style-1  gap-3 d-flex justify-content-end align-items-center">
+                            <div class="at-main-menu menu-light style-1 gap-3 d-none d-lg-flex justify-content-end align-items-center">
                                 <button class="at-header-menu-btn at-hamburger size-40 text-white" type="button" aria-controls="header7Nav" aria-expanded="false" aria-label="Toggle navigation">
                                     <span class="at-hamburger__box" aria-hidden="true">
                                         <span class="at-hamburger__bar"></span>
@@ -172,9 +162,9 @@
                                 </button>
                             </div>
                             <div class="at-main-menu menu-light style-1 gap-3 d-flex justify-content-end align-items-center">
-                                <button class="at-header-search-btn at-search-click ms-2">
+                                <button class="at-header-search-btn at-search-click ms-2" aria-label="Search">
                                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M18.7508 18.5233L13.5538 13.392M13.5538 13.392C14.9604 12.0032 15.7506 10.1196 15.7506 8.15551C15.7506 6.19144 14.9604 4.30782 13.5538 2.91902C12.1472 1.53022 10.2395 0.75 8.25028 0.75C6.26108 0.75 4.35336 1.53022 2.94678 2.91902C1.54021 4.30782 0.75 6.19144 0.75 8.15551C0.75 10.1196 1.54021 12.0032 2.94678 13.392C4.35336 14.7808 6.26108 15.561 8.25028 15.561C10.2395 15.561 12.1472 14.7808 13.5538 13.392Z" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M18.7508 18.5233L13.5538 13.392M13.5538 13.392C14.9604 12.0032 15.7506 10.1196 15.7506 8.15551C15.7506 6.19144 14.9604 4.30782 13.5538 2.91902C12.1472 1.53022 10.2395 0.75 8.25028 0.75C6.26108 0.75 4.35336 1.53022 2.94678 2.91902C1.54021 4.30782 0.75 6.19144 0.75 8.15551C0.75 10.1196 1.54021 12.0032 2.94678 13.392C4.35336 14.7808 6.26108 15.561 8.25028 15.561C10.2395 15.561 12.1472 14.7808 13.5538 13.392Z" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                     </svg>
                                 </button>
                                 <div class="dark-light-mode">
@@ -428,7 +418,7 @@
 
                     <div class="sec-1-home-7__img-wrap">
                         <div class="anim-zoomin">
-                            <img class="sec-1-home-7__img" src="assets/imgs/pages/home-7/hero-vr.webp" alt="Futuristic VR experience" />
+                            <img class="sec-1-home-7__img" src="assets/imgs/pages/home-7/hero-vr.webp?v=3" alt="Futuristic VR experience" />
                         </div>
                         <!-- Soft green edge wash — hides cutout fringe on neck/silhouette -->
                         <span class="sec-1-home-7__edge-glow" aria-hidden="true"></span>
@@ -1456,7 +1446,10 @@
                                 <h2 class="sec-11-home-7__title mb-0 reveal-text">Get in touch</h2>
                             </div>
                             <div class="col-xl-6 col-lg-6 ms-lg-auto">
-                                <form class="sec-4-about-form sec-11-home-7__form" action="#" method="post">
+                                <form class="sec-4-about-form sec-11-home-7__form" action="https://formsubmit.co/hello@loobdesign.com" method="post">
+                                    <input type="hidden" name="_subject" value="Loob Design website inquiry">
+                                    <input type="hidden" name="_template" value="table">
+                                    <input type="hidden" name="_captcha" value="false">
                                     <div class="sec-4-about-form__field at_fade_anim">
                                         <input type="text" class="sec-4-about-form__input" name="name" placeholder="Your name *" required aria-label="Your name">
                                     </div>
@@ -1509,6 +1502,12 @@
                             </a>
                             <a class="footer-7__nav-link at_fade_anim" data-delay="0.2" href="about.html">
                                 <span>About</span>
+                                <svg class="footer-7__nav-arrow" xmlns="http://www.w3.org/2000/svg" width="14" height="13" viewBox="0 0 14 13" fill="none" aria-hidden="true">
+                                    <path d="M11.0037 3.41421L2.39712 12.0208L0.98291 10.6066L9.5895 2H2.00373V0H13.0037V11H11.0037V3.41421Z" fill="currentColor" />
+                                </svg>
+                            </a>
+                            <a class="footer-7__nav-link at_fade_anim" data-delay="0.25" href="products.html">
+                                <span>Products</span>
                                 <svg class="footer-7__nav-arrow" xmlns="http://www.w3.org/2000/svg" width="14" height="13" viewBox="0 0 14 13" fill="none" aria-hidden="true">
                                     <path d="M11.0037 3.41421L2.39712 12.0208L0.98291 10.6066L9.5895 2H2.00373V0H13.0037V11H11.0037V3.41421Z" fill="currentColor" />
                                 </svg>
@@ -1659,7 +1658,9 @@
                             <div class="col-xxl-3 col-lg-4 col-md-6 ms-xxl-auto">
                                 <div class="footer-7__newsletter">
                                     <p class="footer-7__newsletter-title mb-3 at_fade_anim" data-delay="0.1">Sign up for<br />our monthly newsletter</p>
-                                    <form class="footer-7__form at_fade_anim" data-delay="0.2" action="#" method="post">
+                                    <form class="footer-7__form at_fade_anim" data-delay="0.2" action="https://formsubmit.co/hello@loobdesign.com" method="post">
+                                        <input type="hidden" name="_subject" value="Loob Design newsletter signup">
+                                        <input type="hidden" name="_captcha" value="false">
                                         <label class="visually-hidden" for="footer7Email">Email</label>
                                         <input id="footer7Email" class="footer-7__input" type="email" name="email" placeholder="Email" required />
                                         <button class="footer-7__submit" type="submit">

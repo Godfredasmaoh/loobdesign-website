@@ -2615,18 +2615,50 @@ input[type=color] {
   gap: 4px;
 }
 .at-header-search-btn {
-  color: #69b804;
+  color: currentColor;
   line-height: 0;
 }
 .at-header-search-btn svg path {
-  stroke: #69b804 !important;
+  stroke: currentColor !important;
+}
+/* Light pages: black search icon */
+html:not([data-bs-theme=dark]) .at-header-search-btn,
+html:not([data-bs-theme=dark]) .at-header-search-btn svg path,
+[data-bs-theme=light] .at-header-search-btn,
+[data-bs-theme=light] .at-header-search-btn svg path {
+  color: #0f0f0f !important;
+  stroke: #0f0f0f !important;
+}
+/* Dark theme (non-home): white search icon */
+[data-bs-theme=dark] .at-header-search-btn,
+[data-bs-theme=dark] .at-header-search-btn svg path {
+  color: #fff !important;
+  stroke: #fff !important;
+}
+/* Home page: always white — theme toggle must not change this */
+header.header-7 .at-header-search-btn,
+header.header-7 .at-header-search-btn svg path,
+header.header-7 .menu-light .at-header-search-btn,
+header.header-7 .menu-light .at-header-search-btn svg path,
+[data-bs-theme=light] header.header-7 .at-header-search-btn,
+[data-bs-theme=light] header.header-7 .at-header-search-btn svg path,
+[data-bs-theme=dark] header.header-7 .at-header-search-btn,
+[data-bs-theme=dark] header.header-7 .at-header-search-btn svg path,
+html:not([data-bs-theme=dark]) header.header-7 .at-header-search-btn,
+html:not([data-bs-theme=dark]) header.header-7 .at-header-search-btn svg path {
+  color: #fff !important;
+  stroke: #fff !important;
 }
 @media only screen and (max-width: 991.98px) {
   .at-header-logo .loob-wordmark,
-  .at-offcanvas-logo .loob-wordmark,
   .at-search-logo .loob-wordmark {
     display: none !important;
   }
+}
+.at-offcanvas-logo .loob-wordmark,
+.at-offcanvas-2-area .at-header-logo .loob-wordmark {
+  display: block !important;
+  color: var(--at-common-black, #0f0f0f);
 }
 .at-header-spacing {
   padding: 10px 0;
@@ -13310,20 +13342,39 @@ input.footer-15__form-input:focus {
   flex: 1 1 50%;
 }
 .sec-1-home-7__bg-left {
-  background: #69b804;
+  background: #69b805;
 }
 .sec-1-home-7__bg-right {
   background: #0f2e00;
 }
+/* Desktop: one seamless split (avoids flex hairline) + slight overlap */
+@media (min-width: 992px) {
+  .sec-1-home-7__bg {
+    background: linear-gradient(to right, #69b805 50%, #0f2e00 50%);
+  }
+  .sec-1-home-7__bg-left,
+  .sec-1-home-7__bg-right {
+    background: transparent;
+  }
+}
 @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 574.98px) {
   .sec-1-home-7__bg {
     flex-direction: column;
+    /* Soft vertical blend — no hard lime→dark seam */
+    background: linear-gradient(
+      to bottom,
+      #69b805 0%,
+      #69b805 38%,
+      #3d6e04 52%,
+      #1a3d01 62%,
+      #0f2e00 72%,
+      #0f2e00 100%
+    );
   }
-  .sec-1-home-7__bg-left {
-    flex: 0 0 45%;
-  }
+  .sec-1-home-7__bg-left,
   .sec-1-home-7__bg-right {
     flex: 1 1 auto;
+    background: transparent;
   }
 }
 .sec-1-home-7__star {
@@ -13377,8 +13428,16 @@ input.footer-15__form-input:focus {
   position: absolute;
   inset: 0 0 0 0;
   overflow: hidden;
-  max-width: 45%;
-  margin-top: 80px;
+  max-width: 50%;
+  /* Soft fades: bottom into split, right into dark panel (desktop seam) */
+  -webkit-mask-image:
+    linear-gradient(to bottom, #000 0%, #000 58%, rgba(0, 0, 0, 0.7) 78%, transparent 100%),
+    linear-gradient(to right, #000 0%, #000 82%, rgba(0, 0, 0, 0.55) 92%, transparent 100%);
+          mask-image:
+    linear-gradient(to bottom, #000 0%, #000 58%, rgba(0, 0, 0, 0.7) 78%, transparent 100%),
+    linear-gradient(to right, #000 0%, #000 82%, rgba(0, 0, 0, 0.55) 92%, transparent 100%);
+  -webkit-mask-composite: source-in;
+          mask-composite: intersect;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 574.98px) {
   .sec-1-home-7__img-wrap {
@@ -13386,16 +13445,23 @@ input.footer-15__form-input:focus {
     width: 100%;
     max-width: 100%;
     height: 580px;
-    margin: 0 auto;
+    margin: -110px auto 0;
+    padding-top: 110px;
+    box-sizing: content-box;
     display: flex;
     align-items: center;
     justify-content: center;
+    -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 42%, rgba(0, 0, 0, 0.75) 58%, rgba(0, 0, 0, 0.35) 72%, transparent 88%);
+            mask-image: linear-gradient(to bottom, #000 0%, #000 42%, rgba(0, 0, 0, 0.75) 58%, rgba(0, 0, 0, 0.35) 72%, transparent 88%);
+    -webkit-mask-composite: source-over;
+            mask-composite: add;
   }
 }
 @media (max-width: 574.98px) {
   .sec-1-home-7__img-wrap {
     height: 520px;
-    max-width: 92%;
+    max-width: 100%;
+    margin-top: -110px;
   }
 }
 .sec-1-home-7__img {
@@ -13405,36 +13471,41 @@ input.footer-15__form-input:focus {
      object-fit: cover;
   -o-object-position: center top;
      object-position: center top;
-  /* green outline covers residual cutout fringe */
-  filter: drop-shadow(0 0 0.5px #69b804) drop-shadow(1px 0 0 #69b804) drop-shadow(-1px 0 0 #69b804) drop-shadow(0 1px 0 #69b804) drop-shadow(0 -1px 0 #69b804) drop-shadow(1px 1px 0 #69b804) drop-shadow(-1px 1px 0 #69b804) drop-shadow(1px -1px 0 #69b804) drop-shadow(-1px -1px 0 #69b804);
+  /* Soft side fringe only — no hard outline on the center seam */
+  filter: none;
 }
 .sec-1-home-7__edge-glow {
   position: absolute;
   inset: 0;
   z-index: 1;
   pointer-events: none;
+  /* Edge wash only — keep face / cheek / lips clear of green */
   background:
-    radial-gradient(ellipse 32% 60% at 64% 58%, rgba(105, 184, 4, 0.95) 0%, rgba(105, 184, 4, 0.55) 30%, transparent 68%),
-    radial-gradient(ellipse 20% 42% at 58% 52%, rgba(105, 184, 4, 0.85) 0%, transparent 62%);
+    linear-gradient(to right, transparent 78%, rgba(15, 46, 0, 0.45) 90%, rgba(15, 46, 0, 0.92) 100%),
+    linear-gradient(to bottom, transparent 62%, rgba(15, 46, 0, 0.28) 80%, rgba(15, 46, 0, 0.85) 100%);
+  -webkit-mask-image: radial-gradient(ellipse 55% 50% at 42% 38%, transparent 0%, transparent 55%, #000 82%, #000 100%);
+          mask-image: radial-gradient(ellipse 55% 50% at 42% 38%, transparent 0%, transparent 55%, #000 82%, #000 100%);
   mix-blend-mode: normal;
-  opacity: 0.55;
+  opacity: 0.7;
   animation: sec1-edge-glow 2.8s ease-in-out infinite;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 574.98px) {
   .sec-1-home-7__edge-glow {
     background:
-      radial-gradient(ellipse 35% 50% at 55% 55%, rgba(105, 184, 4, 0.9) 0%, rgba(105, 184, 4, 0.4) 40%, transparent 72%),
-      radial-gradient(ellipse 22% 38% at 52% 48%, rgba(105, 184, 4, 0.75) 0%, transparent 68%);
+      linear-gradient(to bottom, transparent 55%, rgba(15, 46, 0, 0.4) 78%, rgba(15, 46, 0, 0.92) 100%),
+      linear-gradient(to right, transparent 75%, rgba(15, 46, 0, 0.35) 92%, rgba(15, 46, 0, 0.7) 100%);
+    -webkit-mask-image: radial-gradient(ellipse 60% 55% at 50% 36%, transparent 0%, transparent 50%, #000 80%, #000 100%);
+            mask-image: radial-gradient(ellipse 60% 55% at 50% 36%, transparent 0%, transparent 50%, #000 80%, #000 100%);
   }
 }
 @keyframes sec1-edge-glow {
   0%, 100% {
-    opacity: 0.75;
+    opacity: 0.7;
     transform: scale(1);
   }
   50% {
-    opacity: 1;
-    transform: scale(1.03);
+    opacity: 0.9;
+    transform: scale(1.02);
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 574.98px) {
@@ -13485,8 +13556,10 @@ input.footer-15__form-input:focus {
 }
 @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 574.98px) {
   .sec-1-home-7__coords {
-    top: 110px;
-    left: 30px;
+    position: relative;
+    top: auto;
+    left: auto;
+    padding: 8px 20px 12px;
   }
 }
 @media (max-width: 574.98px) {
@@ -13518,7 +13591,7 @@ input.footer-15__form-input:focus {
     position: relative;
     left: auto;
     bottom: auto;
-    padding: 24px 20px 0;
+    padding: 0 20px 0;
     max-width: 100%;
   }
 }
@@ -37208,6 +37281,14 @@ input.footer-15__form-input:focus {
   transform: translateY(-50%);
   font-size: 16px;
   border-radius: 8px;
+  background-color: #69b804;
+  color: #fff;
+  border: 1px solid #69b804;
+}
+.at-search-form-btn:hover {
+  background-color: #549900;
+  border-color: #549900;
+  color: #fff;
 }
 .at-search-form-input {
   position: relative;
