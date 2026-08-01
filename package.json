@@ -1,0 +1,12 @@
+{
+  "name": "loobdesign-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Loob Design static marketing website",
+  "scripts": {
+    "build": "node build-static.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
