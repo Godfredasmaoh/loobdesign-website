@@ -1,0 +1,198 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": ["Organization", "ProfessionalService"],
+      "@id": "https://loobdesign.com/#organization",
+      "name": "Loob Design",
+      "legalName": "Loob Design",
+      "alternateName": [
+        "Loob",
+        "LoobDesign",
+        "Loob Design Software",
+        "Loob Software",
+        "Loob Design UK",
+        "Loob Design Ghana"
+      ],
+      "brand": {
+        "@type": "Brand",
+        "name": "Loob",
+        "alternateName": ["Loob Design", "LoobDesign"],
+        "slogan": "Loob Design builds software products for startups and growing companies.",
+        "logo": "https://loobdesign.com/assets/imgs/template/logo/loob-logo.svg"
+      },
+      "url": "https://loobdesign.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://loobdesign.com/assets/imgs/template/logo/loob-logo.svg",
+        "width": 512,
+        "height": 512,
+        "caption": "Loob Design logo"
+      },
+      "image": "https://loobdesign.com/assets/imgs/pages/home-7/hero-vr.webp",
+      "description": "Loob Design (Loob) is a software company and product studio in Sunderland, UK and Accra, Ghana. Loob builds custom software, web apps, mobile apps, ERP, Salesforce platforms, and MVP products for startups and companies in Ghana, the United Kingdom (including London), the United States, and worldwide.",
+      "slogan": "Software company helping startups and businesses build products that scale.",
+      "email": "hello@loobdesign.com",
+      "telephone": ["+447307246096", "+233202585094"],
+      "address": [
+        {
+          "@type": "PostalAddress",
+          "streetAddress": "A690",
+          "addressLocality": "Sunderland",
+          "postalCode": "SR1 1AE",
+          "addressRegion": "Tyne and Wear",
+          "addressCountry": "GB"
+        },
+        {
+          "@type": "PostalAddress",
+          "addressLocality": "Accra",
+          "addressCountry": "GH"
+        }
+      ],
+      "areaServed": [
+        { "@type": "Country", "name": "United Kingdom" },
+        { "@type": "City", "name": "Sunderland" },
+        { "@type": "City", "name": "London" },
+        { "@type": "Country", "name": "Ghana" },
+        { "@type": "City", "name": "Accra" },
+        { "@type": "Country", "name": "United States" },
+        "Worldwide"
+      ],
+      "knowsAbout": [
+        "Loob Design",
+        "Software Development",
+        "Software Company",
+        "Web Development",
+        "Web Developer",
+        "Software Developer",
+        "Application Development",
+        "Mobile App Development",
+        "Website Design",
+        "Startup Product Development",
+        "MVP Development",
+        "Custom Software",
+        "ERP Software",
+        "Salesforce Platform",
+        "Productivity Software",
+        "Product Design",
+        "UI UX Design",
+        "Digital Transformation"
+      ],
+      "makesOffer": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Custom Software Development",
+            "description": "Loob Design builds custom software products for startups and enterprises."
+          },
+          "areaServed": ["GB", "GH", "US"]
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Web Development",
+            "description": "Loob Design provides web development and website design for growing brands."
+          },
+          "areaServed": ["GB", "GH", "US"]
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Startup MVP & Product Build",
+            "description": "Loob helps founders design and ship startup MVPs and scalable digital products."
+          },
+          "areaServed": ["GB", "GH", "US"]
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Mobile App Development",
+            "description": "Loob Design develops mobile applications for iOS and Android."
+          },
+          "areaServed": ["GB", "GH", "US"]
+        }
+      ],
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+447307246096",
+          "contactType": "sales",
+          "email": "hello@loobdesign.com",
+          "areaServed": ["GB", "US", "London"],
+          "availableLanguage": ["English"]
+        },
+        {
+          "@type": "ContactPoint",
+          "telephone": "+233202585094",
+          "contactType": "sales",
+          "email": "hello@loobdesign.com",
+          "areaServed": ["GH", "Accra"],
+          "availableLanguage": ["English"]
+        }
+      ],
+      "department": [
+        {
+          "@type": ["LocalBusiness", "ProfessionalService"],
+          "@id": "https://loobdesign.com/#sunderland",
+          "name": "Loob Design Sunderland",
+          "alternateName": "Loob Sunderland",
+          "url": "https://loobdesign.com/contact.html",
+          "telephone": "+447307246096",
+          "email": "hello@loobdesign.com",
+          "priceRange": "$$",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "A690",
+            "addressLocality": "Sunderland",
+            "postalCode": "SR1 1AE",
+            "addressCountry": "GB"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 54.9069,
+            "longitude": -1.3838
+          },
+          "areaServed": ["GB", "London", "United Kingdom"]
+        },
+        {
+          "@type": ["LocalBusiness", "ProfessionalService"],
+          "@id": "https://loobdesign.com/#accra",
+          "name": "Loob Design Accra",
+          "alternateName": "Loob Accra",
+          "url": "https://loobdesign.com/contact.html",
+          "telephone": "+233202585094",
+          "email": "hello@loobdesign.com",
+          "priceRange": "$$",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Accra",
+            "addressCountry": "GH"
+          },
+          "areaServed": ["GH", "Accra", "Ghana"]
+        }
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://loobdesign.com/#website",
+      "url": "https://loobdesign.com/",
+      "name": "Loob Design",
+      "alternateName": "Loob",
+      "description": "Official website of Loob Design (Loob) — software company, web developers, and product builders in Sunderland and Accra serving Ghana, the UK, London, and the US.",
+      "publisher": { "@id": "https://loobdesign.com/#organization" },
+      "inLanguage": ["en", "en-GB", "en-US"],
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://loobdesign.com/?s={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Loob Design",
+  "short_name": "Loob",
+  "description": "Loob Design (Loob) — software company, web developers, and startup product builders in Sunderland & Accra. Serving Ghana, UK, London, and the US.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0F0F0F",
+  "theme_color": "#69b804",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "/assets/imgs/template/logo/loob-logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
