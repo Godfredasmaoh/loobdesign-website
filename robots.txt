@@ -1,17 +1,14 @@
-﻿User-agent: *
+User-agent: *
 Allow: /
 
-# Prefer the live site
+Sitemap: https://loobdesign.com/sitemap.txt
 Sitemap: https://loobdesign.com/sitemap.xml
 
-# Utility / thin pages
 Disallow: /product-cart.html
 Disallow: /product-checkout.html
 Disallow: /coming-soon.html
 Disallow: /404.html
 
-# AI / LLM crawlers
 Allow: /llms.txt
 Allow: /who-is-loob.html
 Allow: /assets/seo/
-
