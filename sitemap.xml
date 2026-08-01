@@ -12,4 +12,5 @@
   <url><loc>https://loobdesign.com/archive-3.html</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://loobdesign.com/product-archive.html</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
   <url><loc>https://loobdesign.com/who-is-loob.html</loc><changefreq>monthly</changefreq><priority>0.95</priority></url>
+  <url><loc>https://loobdesign.com/search.html</loc><changefreq>monthly</changefreq><priority>0.4</priority></url>
 </urlset>

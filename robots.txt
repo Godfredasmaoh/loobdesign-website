@@ -1,8 +1,8 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://loobdesign.com/sitemap.txt
 Sitemap: https://loobdesign.com/sitemap.xml
+Sitemap: https://loobdesign.com/sitemap.txt
 
 Disallow: /product-cart.html
 Disallow: /product-checkout.html
