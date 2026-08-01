@@ -1,110 +1,116 @@
-[
-  {
-    "title": "Home — Loob Design",
-    "url": "index.html",
-    "description": "Loob Design (Loob) software company in Sunderland and Accra. Custom software, web apps, and startup products.",
-    "keywords": "loob, home, software company, startup, erp, salesforce, sunderland, accra"
-  },
-  {
-    "title": "About Loob Design",
-    "url": "about.html",
-    "description": "Learn about Loob — our software company, team, and mission across Ghana, the UK, and the US.",
-    "keywords": "about, loob, company, studio, sunderland, accra"
-  },
-  {
-    "title": "Software & Web Development Services",
-    "url": "services.html",
-    "description": "Custom software development, web development, mobile apps, MVP launch, UI/UX, and growth strategy.",
-    "keywords": "services, software development, web development, mobile app, mvp, ui ux, website design, developer"
-  },
-  {
-    "title": "Products — ERP, Salesforce & Productivity",
-    "url": "products.html",
-    "description": "Loob products: ERP software, Salesforce platform solutions, and productivity tools for growing teams.",
-    "keywords": "products, erp, salesforce, productivity, software, crm"
-  },
-  {
-    "title": "Work & Portfolio",
-    "url": "portfolio.html",
-    "description": "Selected Loob Design software and product work for startups and enterprises.",
-    "keywords": "portfolio, work, projects, case studies, apps"
-  },
-  {
-    "title": "Project Details",
-    "url": "portfolio-details.html",
-    "description": "In-depth look at a Loob Design product and software project.",
-    "keywords": "portfolio details, case study, project"
-  },
-  {
-    "title": "Pricing",
-    "url": "pricing.html",
-    "description": "Transparent pricing for Loob Design software development and product engagements.",
-    "keywords": "pricing, cost, quote, packages, plans"
-  },
-  {
-    "title": "Contact Loob Design",
-    "url": "contact.html",
-    "description": "Contact Loob in Sunderland (A690, SR1 1AE) or Accra. Call +44 7307 246096 or 020 258 5094.",
-    "keywords": "contact, phone, email, sunderland, accra, hire, get in touch"
-  },
-  {
-    "title": "Our Team",
-    "url": "team.html",
-    "description": "Meet the Loob Design software developers, designers, and product builders.",
-    "keywords": "team, developers, designers, people, careers, join"
-  },
-  {
-    "title": "Team Member",
-    "url": "team-details.html",
-    "description": "Profile of a Loob Design team member.",
-    "keywords": "team member, profile"
-  },
-  {
-    "title": "FAQs",
-    "url": "faqs.html",
-    "description": "Answers about hiring Loob for software development, web development, and startup builds.",
-    "keywords": "faq, questions, help, support"
-  },
-  {
-    "title": "News & Insights",
-    "url": "archive-3.html",
-    "description": "News and insights from Loob Design on software, products, and startups.",
-    "keywords": "news, blog, insights, articles"
-  },
-  {
-    "title": "Blog",
-    "url": "archive-1.html",
-    "description": "Loob Design blog articles on software and digital products.",
-    "keywords": "blog, articles, posts"
-  },
-  {
-    "title": "Articles",
-    "url": "archive-2.html",
-    "description": "Articles from Loob Design on ERP, Salesforce, and building modern products.",
-    "keywords": "articles, reading"
-  },
-  {
-    "title": "Stories",
-    "url": "archive-4.html",
-    "description": "Stories and updates from Loob Design.",
-    "keywords": "stories, updates"
-  },
-  {
-    "title": "Insight",
-    "url": "blog-details.html",
-    "description": "An in-depth Loob Design insight on software products and technology.",
-    "keywords": "insight, blog details, article"
-  },
-  {
-    "title": "Merch Shop",
-    "url": "product-archive.html",
-    "description": "Official Loob Design merchandise and apparel.",
-    "keywords": "merch, shop, store, apparel, clothing"
-  },
-  {
-    "title": "Merch Product",
-    "url": "product-details.html",
-    "description": "Shop a Loob Design merchandise product.",
-    "keywords": "merch product, buy"
-  }
+﻿[
+    {
+        "title":  "Home — Loob Design",
+        "url":  "index.html",
+        "description":  "Loob Design (Loob) software company in Sunderland and Accra. Custom software, web apps, and startup products.",
+        "keywords":  "loob, home, software company, startup, erp, salesforce, sunderland, accra"
+    },
+    {
+        "title":  "About Loob Design",
+        "url":  "about.html",
+        "description":  "Learn about Loob — our software company, team, and mission across Ghana, the UK, and the US.",
+        "keywords":  "about, loob, company, studio, sunderland, accra"
+    },
+    {
+        "title":  "Software \u0026 Web Development Services",
+        "url":  "services.html",
+        "description":  "Custom software development, web development, mobile apps, MVP launch, UI/UX, and growth strategy.",
+        "keywords":  "services, software development, web development, mobile app, mvp, ui ux, website design, developer"
+    },
+    {
+        "title":  "Products — ERP, Salesforce \u0026 Productivity",
+        "url":  "products.html",
+        "description":  "Loob products: ERP software, Salesforce platform solutions, and productivity tools for growing teams.",
+        "keywords":  "products, erp, salesforce, productivity, software, crm"
+    },
+    {
+        "title":  "Work \u0026 Portfolio",
+        "url":  "portfolio.html",
+        "description":  "Selected Loob Design software and product work for startups and enterprises.",
+        "keywords":  "portfolio, work, projects, case studies, apps"
+    },
+    {
+        "title":  "Project Details",
+        "url":  "portfolio-details.html",
+        "description":  "In-depth look at a Loob Design product and software project.",
+        "keywords":  "portfolio details, case study, project"
+    },
+    {
+        "title":  "Pricing",
+        "url":  "pricing.html",
+        "description":  "Transparent pricing for Loob Design software development and product engagements.",
+        "keywords":  "pricing, cost, quote, packages, plans"
+    },
+    {
+        "title":  "Contact Loob Design",
+        "url":  "contact.html",
+        "description":  "Contact Loob in Sunderland (A690, SR1 1AE) or Accra. Call +44 7307 246096 or 020 258 5094.",
+        "keywords":  "contact, phone, email, sunderland, accra, hire, get in touch"
+    },
+    {
+        "title":  "Our Team",
+        "url":  "team.html",
+        "description":  "Meet the Loob Design software developers, designers, and product builders.",
+        "keywords":  "team, developers, designers, people, careers, join"
+    },
+    {
+        "title":  "Team Member",
+        "url":  "team-details.html",
+        "description":  "Profile of a Loob Design team member.",
+        "keywords":  "team member, profile"
+    },
+    {
+        "title":  "FAQs",
+        "url":  "faqs.html",
+        "description":  "Answers about hiring Loob for software development, web development, and startup builds.",
+        "keywords":  "faq, questions, help, support"
+    },
+    {
+        "title":  "News \u0026 Insights",
+        "url":  "archive-3.html",
+        "description":  "News and insights from Loob Design on software, products, and startups.",
+        "keywords":  "news, blog, insights, articles"
+    },
+    {
+        "title":  "Blog",
+        "url":  "archive-1.html",
+        "description":  "Loob Design blog articles on software and digital products.",
+        "keywords":  "blog, articles, posts"
+    },
+    {
+        "title":  "Articles",
+        "url":  "archive-2.html",
+        "description":  "Articles from Loob Design on ERP, Salesforce, and building modern products.",
+        "keywords":  "articles, reading"
+    },
+    {
+        "title":  "Stories",
+        "url":  "archive-4.html",
+        "description":  "Stories and updates from Loob Design.",
+        "keywords":  "stories, updates"
+    },
+    {
+        "title":  "Insight",
+        "url":  "blog-details.html",
+        "description":  "An in-depth Loob Design insight on software products and technology.",
+        "keywords":  "insight, blog details, article"
+    },
+    {
+        "title":  "Merch Shop",
+        "url":  "product-archive.html",
+        "description":  "Official Loob Design merchandise and apparel.",
+        "keywords":  "merch, shop, store, apparel, clothing"
+    },
+    {
+        "title":  "Merch Product",
+        "url":  "product-details.html",
+        "description":  "Shop a Loob Design merchandise product.",
+        "keywords":  "merch product, buy"
+    },
+    {
+        "title":  "Who is Loob Design?",
+        "url":  "who-is-loob.html",
+        "description":  "Loob Design (Loob, L-O-O-B) is a software company in Sunderland and Accra. Not Loop Design.",
+        "keywords":  "loob, who is loob, not loop design, software company, brand, entity, l-o-o-b"
+    }
 ]

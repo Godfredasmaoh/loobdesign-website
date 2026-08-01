@@ -36,7 +36,7 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": ["Organization", "ProfessionalService"],
+      "@type": ["Organization", "ProfessionalService", "Corporation"],
       "@id": "https://loobdesign.com/#organization",
       "name": "Loob Design",
       "legalName": "Loob Design",
@@ -46,25 +46,31 @@
         "Loob Design Software",
         "Loob Software",
         "Loob Design UK",
-        "Loob Design Ghana"
+        "Loob Design Ghana",
+        "Loob Design Accra",
+        "Loob Design Sunderland"
       ],
+      "disambiguatingDescription": "Loob Design is a software company spelled L-O-O-B (Loob), not Loop. It is unrelated to Loop Design Awards, Loop Design architecture studios, or other companies named Loop Design.",
       "brand": {
         "@type": "Brand",
+        "@id": "https://loobdesign.com/#brand",
         "name": "Loob",
-        "alternateName": ["Loob Design", "LoobDesign"],
+        "alternateName": ["Loob Design", "LoobDesign", "L-O-O-B"],
         "slogan": "Loob Design builds software products for startups and growing companies.",
-        "logo": "https://loobdesign.com/assets/imgs/template/logo/loob-logo.svg"
+        "logo": "https://loobdesign.com/assets/imgs/template/logo/loob-logo.svg",
+        "description": "Loob is the brand name of Loob Design, a software company in Sunderland, UK and Accra, Ghana."
       },
       "url": "https://loobdesign.com/",
+      "mainEntityOfPage": "https://loobdesign.com/who-is-loob.html",
       "logo": {
         "@type": "ImageObject",
         "url": "https://loobdesign.com/assets/imgs/template/logo/loob-logo.svg",
         "width": 512,
         "height": 512,
-        "caption": "Loob Design logo"
+        "caption": "Loob Design logo — software company brand mark for Loob (L-O-O-B)"
       },
       "image": "https://loobdesign.com/assets/imgs/pages/home-7/hero-vr.webp",
-      "description": "Loob Design (Loob) is a software company and product studio in Sunderland, UK and Accra, Ghana. Loob builds custom software, web apps, mobile apps, ERP, Salesforce platforms, and MVP products for startups and companies in Ghana, the United Kingdom (including London), the United States, and worldwide.",
+      "description": "Loob Design (Loob, spelled L-O-O-B) is a software company and product studio in Sunderland, UK and Accra, Ghana. Loob builds custom software, web apps, mobile apps, ERP, Salesforce platforms, and MVP products for startups and companies in Ghana, the United Kingdom (including London), the United States, and worldwide. Loob Design is not Loop Design.",
       "slogan": "Software company helping startups and businesses build products that scale.",
       "email": "hello@loobdesign.com",
       "telephone": ["+447307246096", "+233202585094"],
@@ -94,6 +100,7 @@
       ],
       "knowsAbout": [
         "Loob Design",
+        "Loob",
         "Software Development",
         "Software Company",
         "Web Development",
@@ -215,18 +222,56 @@
       "@id": "https://loobdesign.com/#website",
       "url": "https://loobdesign.com/",
       "name": "Loob Design",
-      "alternateName": "Loob",
-      "description": "Official website of Loob Design (Loob) — software company, web developers, and product builders in Sunderland and Accra serving Ghana, the UK, London, and the US.",
+      "alternateName": ["Loob", "Loob Design Software"],
+      "description": "Official website of Loob Design (Loob, spelled L-O-O-B) — a software company in Sunderland and Accra. Not Loop Design.",
       "publisher": { "@id": "https://loobdesign.com/#organization" },
       "inLanguage": ["en", "en-GB", "en-US"],
       "potentialAction": {
         "@type": "SearchAction",
         "target": {
           "@type": "EntryPoint",
-          "urlTemplate": "https://loobdesign.com/?s={search_term_string}"
+          "urlTemplate": "https://loobdesign.com/search.html?q={search_term_string}"
         },
         "query-input": "required name=search_term_string"
       }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://loobdesign.com/#loob-faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is Loob Design?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Loob Design (often shortened to Loob, spelled L-O-O-B) is a software company based in Sunderland, United Kingdom and Accra, Ghana. Loob Design builds custom software, websites, mobile apps, ERP systems, Salesforce platforms, and startup MVPs for clients in Ghana, the UK (including London), the United States, and worldwide. Official site: https://loobdesign.com"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Loob Design the same as Loop Design?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Loob Design is a different company. The brand is spelled Loob (L-O-O-B), not Loop. Loob Design is a software company and is not affiliated with Loop Design Awards, Loop Design architecture firms, or other Loop Design entities."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where is Loob Design located?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Loob Design has offices in Sunderland, United Kingdom (A690, SR1 1AE) and Accra, Ghana. Contact: +44 7307 246096 (UK), 020 258 5094 (Ghana), hello@loobdesign.com."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does Loob Design do?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Loob Design provides software development, web development, mobile app development, website design, startup MVP builds, ERP software, Salesforce platform solutions, and productivity software."
+          }
+        }
+      ]
     }
   ]
 }
