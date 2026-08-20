@@ -269,7 +269,7 @@
     if ($(tpSideMenu).find('.at-submenu').length != 0) {
         $(tpSideMenu).find('.at-submenu').parent().append('<button class="at-menu-close"><i class="fa-solid fa-plus"></i></button>');
     }
-    var sideMenuList = $('.at-offcanvas-menu nav > ul > li button.at-menu-close, .at-offcanvas-menu nav > ul li.has-dropdown > a, .at-offcanvas-menu nav > ul li.has-dropdown > ul > li.menu-item-has-children > a');
+    var sideMenuList = $('.at-offcanvas-menu nav > ul > li button.at-menu-close, .at-offcanvas-menu nav > ul li.has-dropdown > ul > li.menu-item-has-children > a');
     $(sideMenuList).on('click', function (e) {
         e.preventDefault();
         if (!$(this).parent().hasClass('active')) {

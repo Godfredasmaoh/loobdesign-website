@@ -3575,6 +3575,13 @@ html:not([data-bs-theme=dark]) header.header-7 .at-header-search-btn svg path {
   opacity: 1;
   transform: scale(1);
 }
+@media (hover: none) {
+  .at-main-menu nav ul li:hover > .submenu {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+  }
+}
 .at-main-menu nav ul li:hover.has-dropdown > a {
   transition: all 0.4s ease 0.3s ease-out;
 }

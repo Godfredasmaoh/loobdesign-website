@@ -16,8 +16,7 @@
     { label: "Startup MVP", q: "mvp startup" },
     { label: "Pricing", q: "pricing" },
     { label: "Team", q: "team" },
-    { label: "Portfolio", q: "portfolio" },
-    { label: "Merch", q: "merch" }
+    { label: "Portfolio", q: "portfolio" }
   ];
 
   var index = null;
