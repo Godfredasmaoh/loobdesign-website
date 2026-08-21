@@ -22,7 +22,8 @@
   --hero-fg-80: rgba(1, 1, 1, 0.8);
   --hero-fg-70: rgba(1, 1, 1, 0.7);
   --hero-fg-60: rgba(1, 1, 1, 0.6);
-  --hero-card-bg: rgba(255, 255, 255, 0.55);
+  --hero-card-bg: rgba(255, 255, 255, 0.18);
+  --hero-card-border: rgba(255, 255, 255, 0.22);
   position: relative;
   isolation: isolate;
   z-index: 1;
@@ -42,7 +43,19 @@ html[data-bs-theme="dark"] .hero-nexum {
   --hero-fg-80: rgba(255, 255, 255, 0.8);
   --hero-fg-70: rgba(255, 255, 255, 0.7);
   --hero-fg-60: rgba(255, 255, 255, 0.6);
-  --hero-card-bg: rgba(255, 255, 255, 0.12);
+  --hero-card-bg: rgba(255, 255, 255, 0.08);
+  --hero-card-border: rgba(255, 255, 255, 0.16);
+}
+
+@media (min-width: 1024px) {
+  .hero-nexum {
+    --hero-card-bg: rgba(255, 255, 255, 0.12);
+    --hero-card-border: rgba(255, 255, 255, 0.28);
+  }
+
+  html[data-bs-theme="dark"] .hero-nexum {
+    --hero-card-bg: rgba(255, 255, 255, 0.1);
+  }
 }
 
 .hero-nexum__video {
@@ -235,9 +248,9 @@ html[data-bs-theme="dark"] .hero-nexum {
   background: var(--hero-card-bg) !important;
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.35);
+  border: 1px solid var(--hero-card-border, rgba(255, 255, 255, 0.22));
   padding: 1.15rem 1.25rem !important;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06);
 }
 
 @media (min-width: 640px) {
