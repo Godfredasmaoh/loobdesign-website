@@ -672,38 +672,65 @@
     <div id="smooth-wrapper">
         <div id="smooth-content">
             <main>
-                <!-- prettier-ignore -->
-                <section class="hero-mainframe" aria-label="Loob Design hero">
+                <!-- Cinematic hero (Loob header kept above) -->
+                <section class="hero-nexum" aria-label="Loob Design hero">
                     <video
-                        id="hero-mainframe-video"
-                        class="hero-mainframe__video"
-                        src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260530_042513_df96a13b-6155-4f6e-8b93-c9dee66fba08.mp4"
+                        class="hero-nexum__video"
+                        src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260803_192301_9231ed6b-c55c-4a48-909c-4ebe11cf2e11.mp4"
+                        autoplay
+                        loop
                         muted
                         playsinline
                         preload="auto"
                         aria-hidden="true"
                     ></video>
 
-                    <div class="hero-mainframe__content">
-                        <p class="hero-mainframe__intro">
-                            Hey there, meet Loob,<br>
-                            Loob Design's Adaptive Response Interface Agent
-                        </p>
-                        <p class="hero-mainframe__type">
-                            <span id="hero-mainframe-type"></span><span class="hero-mainframe__cursor" id="hero-mainframe-cursor" aria-hidden="true"></span>
-                        </p>
-                        <div class="hero-mainframe__pills" id="hero-mainframe-pills">
-                            <a class="hero-mainframe__pill" href="contact.html">Pitch us an idea</a>
-                            <a class="hero-mainframe__pill" href="team.html">Come work with us</a>
-                            <a class="hero-mainframe__pill" href="contact.html">Send a brief hello</a>
-                            <a class="hero-mainframe__pill" href="about.html">See how we operate</a>
-                            <button class="hero-mainframe__pill hero-mainframe__pill--outline" id="hero-mainframe-copy" type="button">
-                                <span>Reach us: <span class="hero-mainframe__email">hello@loobdesign.com</span></span>
-                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                                    <rect x="9" y="9" width="13" height="13" rx="2" stroke="currentColor" stroke-width="2"></rect>
-                                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" stroke="currentColor" stroke-width="2"></path>
-                                </svg>
-                            </button>
+                    <div class="hero-nexum__inner">
+                        <div class="hero-nexum__main">
+                            <div class="hero-nexum__copy">
+                                <h1 class="hero-nexum__title">We don't just build software. We help elevate startups.</h1>
+                                <form class="hero-nexum__cta" action="contact.html" method="get">
+                                    <label class="visually-hidden" for="hero-nexum-email">Email</label>
+                                    <input
+                                        id="hero-nexum-email"
+                                        class="hero-nexum__email"
+                                        type="email"
+                                        name="email"
+                                        placeholder="Type your email"
+                                        autocomplete="email"
+                                    >
+                                    <button class="hero-nexum__btn" type="submit">Get started</button>
+                                </form>
+                            </div>
+
+                            <div class="hero-nexum__cards">
+                                <article class="hero-nexum__card hero-nexum__card--stats">
+                                    <p class="hero-nexum__stat">100+</p>
+                                    <p class="hero-nexum__stat-body">Projects delivered for startups and teams that need software that scales.</p>
+                                </article>
+
+                                <article class="hero-nexum__card">
+                                    <div class="hero-nexum__brand">
+                                        <span class="hero-nexum__brand-mark" aria-hidden="true">S</span>
+                                        <p class="hero-nexum__brand-name">Stratify</p>
+                                    </div>
+                                    <p class="hero-nexum__quote">"With Loob Design we went from a bold idea to a market-ready product, with a team that elevated every step of the build."</p>
+                                    <div class="hero-nexum__person">
+                                        <img
+                                            class="hero-nexum__avatar"
+                                            src="https://i.pravatar.cc/72?img=12"
+                                            width="36"
+                                            height="36"
+                                            alt="Sara Klein"
+                                            loading="lazy"
+                                        >
+                                        <div>
+                                            <p class="hero-nexum__person-name">Sara Klein</p>
+                                            <p class="hero-nexum__person-role">Dir of Operations</p>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
                         </div>
                     </div>
                 </section>
