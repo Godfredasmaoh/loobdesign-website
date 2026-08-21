@@ -1,0 +1,47 @@
+/* Formspree status + honeypot */
+.loob-formspree-gotcha {
+  position: absolute !important;
+  left: -9999px !important;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+.loob-formspree-status {
+  margin: 0.85rem 0 0;
+  font-size: 0.875rem;
+  line-height: 1.45;
+}
+
+.loob-formspree-status.is-success {
+  color: #1a7f37;
+}
+
+.loob-formspree-status.is-error {
+  color: #c62828;
+}
+
+html[data-bs-theme="dark"] .loob-formspree-status.is-success {
+  color: #86ee02;
+}
+
+.hero-nexum .loob-formspree-status {
+  margin-top: 0.75rem;
+  color: inherit;
+}
+
+.hero-nexum .loob-formspree-status.is-success {
+  color: #1a7f37;
+}
+
+html[data-bs-theme="dark"] .hero-nexum .loob-formspree-status.is-success,
+html:not([data-bs-theme="light"]) .hero-nexum .loob-formspree-status.is-success {
+  color: #86ee02;
+}
+
+form.is-submitting {
+  opacity: 0.72;
+  pointer-events: none;
+}

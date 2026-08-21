@@ -18,18 +18,4 @@
   } else {
     video.addEventListener("canplay", play, { once: true });
   }
-
-  var form = document.querySelector(".hero-nexum__cta");
-  if (form) {
-    form.addEventListener("submit", function (e) {
-      e.preventDefault();
-      var email = form.querySelector(".hero-nexum__email");
-      var value = email && email.value ? email.value.trim() : "";
-      var url = "contact.html";
-      if (value) {
-        url += "?email=" + encodeURIComponent(value);
-      }
-      window.location.href = url;
-    });
-  }
 })();
