@@ -1,6 +1,4 @@
-/* Nexum-style cinematic hero — used under existing Loob header */
-
-@import url("https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Silkscreen:wght@400;700&display=swap");
+/* Cinematic homepage hero under existing Loob header */
 
 .hero-nexum,
 .hero-nexum * {
@@ -24,12 +22,16 @@
   --hero-fg-80: rgba(1, 1, 1, 0.8);
   --hero-fg-70: rgba(1, 1, 1, 0.7);
   --hero-fg-60: rgba(1, 1, 1, 0.6);
+  --hero-card-bg: rgba(255, 255, 255, 0.55);
   position: relative;
+  isolation: isolate;
   z-index: 1;
   width: 100%;
-  height: 100vh;
   min-height: 100vh;
+  min-height: 100svh;
+  min-height: 100dvh;
   overflow: hidden;
+  background: #0a0a0a;
   font-family: "Geist", -apple-system, BlinkMacSystemFont, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -40,15 +42,18 @@ html[data-bs-theme="dark"] .hero-nexum {
   --hero-fg-80: rgba(255, 255, 255, 0.8);
   --hero-fg-70: rgba(255, 255, 255, 0.7);
   --hero-fg-60: rgba(255, 255, 255, 0.6);
+  --hero-card-bg: rgba(255, 255, 255, 0.12);
 }
 
 .hero-nexum__video {
-  position: absolute;
-  inset: 0;
+  position: absolute !important;
+  inset: 0 !important;
   z-index: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  width: 100% !important;
+  height: 100% !important;
+  max-width: none !important;
+  object-fit: cover !important;
+  object-position: center center;
   pointer-events: none;
 }
 
@@ -58,15 +63,18 @@ html[data-bs-theme="dark"] .hero-nexum {
   display: flex;
   flex-direction: column;
   height: 100%;
+  min-height: 100%;
   width: 100%;
+  padding-top: 5.5rem;
 }
 
 .hero-nexum__main {
   margin-top: auto;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
-  padding: 0 1.25rem 2rem;
+  gap: 1.25rem;
+  width: 100%;
+  padding: 0 1.25rem 1.75rem;
 }
 
 @media (min-width: 640px) {
@@ -91,44 +99,47 @@ html[data-bs-theme="dark"] .hero-nexum {
 
 .hero-nexum__copy {
   max-width: 36rem;
+  width: 100%;
 }
 
 .hero-nexum__title {
-  margin: 0;
+  margin: 0 !important;
   max-width: 36rem;
-  font-family: "Geist", -apple-system, BlinkMacSystemFont, sans-serif;
-  font-size: 1.875rem;
-  font-weight: 600;
-  line-height: 1.1;
-  letter-spacing: -0.025em;
-  color: var(--hero-fg, #010101);
+  font-family: "Geist", -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 1.75rem !important;
+  font-weight: 600 !important;
+  line-height: 1.1 !important;
+  letter-spacing: -0.025em !important;
+  color: var(--hero-fg) !important;
 }
 
 @media (min-width: 640px) {
   .hero-nexum__title {
-    font-size: 2.25rem;
+    font-size: 2.25rem !important;
   }
 }
 
 @media (min-width: 1024px) {
   .hero-nexum__title {
-    font-size: 3.5rem;
+    font-size: 3.5rem !important;
   }
 }
 
 .hero-nexum__cta {
-  margin-top: 1.5rem;
-  display: flex;
+  margin-top: 1.25rem !important;
+  display: flex !important;
   flex-direction: column;
   gap: 0.75rem;
+  width: 100%;
 }
 
 @media (min-width: 640px) {
   .hero-nexum__cta {
-    margin-top: 2rem;
-    display: inline-flex;
+    margin-top: 2rem !important;
+    display: inline-flex !important;
     flex-direction: row;
     align-items: center;
+    width: auto;
     border-radius: 9999px;
     background: #fff;
     padding: 0.375rem;
@@ -137,63 +148,71 @@ html[data-bs-theme="dark"] .hero-nexum {
 }
 
 .hero-nexum__email {
-  width: 100%;
-  border: 0;
-  outline: none;
-  border-radius: 9999px;
-  background: #fff;
-  padding: 0.75rem 1.25rem;
-  font-family: inherit;
-  font-size: 0.875rem;
-  color: #111827;
+  width: 100% !important;
+  max-width: none !important;
+  border: 0 !important;
+  outline: none !important;
+  box-shadow: none !important;
+  border-radius: 9999px !important;
+  background: #fff !important;
+  padding: 0.75rem 1.25rem !important;
+  font-family: inherit !important;
+  font-size: 0.875rem !important;
+  line-height: 1.4 !important;
+  color: #111827 !important;
 }
 
 .hero-nexum__email::placeholder {
-  color: #9ca3af;
+  color: #9ca3af !important;
+  opacity: 1;
 }
 
 @media (min-width: 640px) {
   .hero-nexum__email {
-    width: 16rem;
-    border-radius: 0;
-    background: transparent;
-    padding: 0.5rem 1rem;
+    width: 16rem !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+    padding: 0.5rem 1rem !important;
   }
 }
 
 .hero-nexum__btn {
-  display: inline-flex;
+  display: inline-flex !important;
   align-items: center;
   justify-content: center;
-  border: 0;
-  border-radius: 9999px;
-  padding: 0.75rem 1.5rem;
-  font-family: inherit;
-  font-size: 0.875rem;
-  font-weight: 500;
-  color: #fff;
-  text-decoration: none;
+  width: 100%;
+  border: 0 !important;
+  border-radius: 9999px !important;
+  padding: 0.75rem 1.5rem !important;
+  font-family: inherit !important;
+  font-size: 0.875rem !important;
+  font-weight: 500 !important;
+  line-height: 1.4 !important;
+  color: #fff !important;
+  text-decoration: none !important;
   cursor: pointer;
-  background: linear-gradient(to bottom, #2b2b2b, #101010);
+  background: linear-gradient(to bottom, #2b2b2b, #101010) !important;
   transition: opacity 0.2s ease;
 }
 
-.hero-nexum__btn:hover {
+.hero-nexum__btn:hover,
+.hero-nexum__btn:focus-visible {
   opacity: 0.9;
-  color: #fff;
+  color: #fff !important;
 }
 
 @media (min-width: 640px) {
   .hero-nexum__btn {
-    padding-top: 0.625rem;
-    padding-bottom: 0.625rem;
+    width: auto;
+    padding-top: 0.625rem !important;
+    padding-bottom: 0.625rem !important;
   }
 }
 
 .hero-nexum__cards {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 0.875rem;
   width: 100%;
 }
 
@@ -212,17 +231,19 @@ html[data-bs-theme="dark"] .hero-nexum {
 }
 
 .hero-nexum__card {
-  border-radius: 1rem;
-  background: rgba(255, 255, 255, 0.1);
+  border-radius: 1rem !important;
+  background: var(--hero-card-bg) !important;
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  padding: 1.25rem;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  padding: 1.15rem 1.25rem !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
 }
 
 @media (min-width: 640px) {
   .hero-nexum__card {
     width: 16rem;
-    padding: 1.5rem;
+    padding: 1.5rem !important;
   }
 }
 
@@ -233,30 +254,30 @@ html[data-bs-theme="dark"] .hero-nexum {
 }
 
 .hero-nexum__stat {
-  margin: 0;
-  font-family: "Silkscreen", cursive;
-  font-size: 1.875rem;
-  font-weight: 400;
-  letter-spacing: -0.025em;
-  color: var(--hero-fg, #010101);
+  margin: 0 !important;
+  font-family: "Silkscreen", cursive !important;
+  font-size: 1.875rem !important;
+  font-weight: 400 !important;
+  letter-spacing: -0.025em !important;
+  color: var(--hero-fg) !important;
 }
 
 @media (min-width: 640px) {
   .hero-nexum__stat {
-    font-size: 2.25rem;
+    font-size: 2.25rem !important;
   }
 }
 
 .hero-nexum__stat-body {
-  margin: 0.75rem 0 0;
-  font-size: 0.875rem;
-  line-height: 1.625;
-  color: var(--hero-fg-70, rgba(1, 1, 1, 0.7));
+  margin: 0.75rem 0 0 !important;
+  font-size: 0.875rem !important;
+  line-height: 1.625 !important;
+  color: var(--hero-fg-70) !important;
 }
 
 @media (min-width: 640px) {
   .hero-nexum__stat-body {
-    margin-top: 1rem;
+    margin-top: 1rem !important;
   }
 }
 
@@ -293,17 +314,17 @@ html[data-bs-theme="dark"] .hero-nexum__brand-mark {
 }
 
 .hero-nexum__brand-name {
-  margin: 0;
-  font-size: 0.875rem;
-  font-weight: 600;
-  color: var(--hero-fg, #010101);
+  margin: 0 !important;
+  font-size: 0.875rem !important;
+  font-weight: 600 !important;
+  color: var(--hero-fg) !important;
 }
 
 .hero-nexum__quote {
-  margin: 0;
-  font-size: 0.875rem;
-  line-height: 1.625;
-  color: var(--hero-fg-80, rgba(1, 1, 1, 0.8));
+  margin: 0 !important;
+  font-size: 0.875rem !important;
+  line-height: 1.625 !important;
+  color: var(--hero-fg-80) !important;
 }
 
 .hero-nexum__person {
@@ -329,16 +350,16 @@ html[data-bs-theme="dark"] .hero-nexum__brand-mark {
 }
 
 .hero-nexum__person-name {
-  margin: 0;
-  font-size: 0.875rem;
-  font-weight: 600;
-  color: var(--hero-fg, #010101);
+  margin: 0 !important;
+  font-size: 0.875rem !important;
+  font-weight: 600 !important;
+  color: var(--hero-fg) !important;
 }
 
 .hero-nexum__person-role {
-  margin: 0;
-  font-size: 0.75rem;
-  color: var(--hero-fg-60, rgba(1, 1, 1, 0.6));
+  margin: 0 !important;
+  font-size: 0.75rem !important;
+  color: var(--hero-fg-60) !important;
 }
 
 /* Keep Loob header above hero video */
