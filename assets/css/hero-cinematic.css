@@ -237,24 +237,19 @@ html[data-bs-theme="light"] .hero-nexum {
   }
 }
 
-/* Cards — bottom-right cluster */
+/* Cards — stack on mobile so Stratify isn't clipped; row from sm+ */
 .hero-nexum__cards {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: nowrap;
   gap: 0.75rem;
   width: 100%;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  scrollbar-width: none;
-}
-
-.hero-nexum__cards::-webkit-scrollbar {
-  display: none;
+  overflow: visible;
 }
 
 @media (min-width: 640px) {
   .hero-nexum__cards {
+    flex-direction: row;
     gap: 1rem;
     overflow: visible;
   }
@@ -270,8 +265,9 @@ html[data-bs-theme="light"] .hero-nexum {
 }
 
 .hero-nexum__card {
-  flex: 1 1 0;
-  min-width: 11.5rem;
+  flex: 1 1 auto;
+  width: 100%;
+  min-width: 0;
   border-radius: 1rem !important;
   background: var(--hero-card-bg) !important;
   backdrop-filter: blur(16px);
