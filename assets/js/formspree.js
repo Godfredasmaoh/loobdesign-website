@@ -44,6 +44,8 @@
 
   function bindForm(form) {
     if (form.getAttribute("data-formspree-bound") === "1") return;
+    if (form.hasAttribute("data-hero-contact")) return;
+    if (form.classList.contains("hero-nexum__cta")) return;
     form.setAttribute("data-formspree-bound", "1");
     form.setAttribute("action", ENDPOINT);
     form.setAttribute("method", "POST");
@@ -107,11 +109,43 @@
     }, true);
   }
 
+  function prefillEmailFromQuery() {
+    var params;
+    try {
+      params = new URLSearchParams(window.location.search);
+    } catch (err) {
+      return;
+    }
+    var email = params.get("email");
+    if (!email) return;
+    email = String(email).trim();
+    if (!email) return;
+
+    var inputs = document.querySelectorAll(
+      'form.sec-4-about-form input[type="email"][name="email"], form.sec-4-about-form input[name="email"]'
+    );
+    inputs.forEach(function (input) {
+      input.value = email;
+      try {
+        input.dispatchEvent(new Event("input", { bubbles: true }));
+      } catch (e) {}
+    });
+
+    var first = inputs[0];
+    if (first && typeof first.focus === "function") {
+      window.setTimeout(function () {
+        first.focus({ preventScroll: true });
+        first.scrollIntoView({ behavior: "smooth", block: "center" });
+      }, 250);
+    }
+  }
+
   function init() {
     var forms = document.querySelectorAll(
-      'form[action*="formspree.io"], form[data-formspree], form.hero-nexum__cta, form.sec-4-about-form, form.footer-7__form'
+      'form[action*="formspree.io"], form[data-formspree], form.sec-4-about-form, form.footer-7__form, form.checkout-billing__form, form.checkout-payment__form'
     );
     forms.forEach(bindForm);
+    prefillEmailFromQuery();
   }
 
   if (document.readyState === "loading") {
