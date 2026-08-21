@@ -11,8 +11,9 @@
 
 .loob-formspree-status {
   margin: 0.85rem 0 0;
-  font-size: 0.875rem;
+  font-size: 0.95rem;
   line-height: 1.45;
+  font-weight: 600;
 }
 
 .loob-formspree-status.is-success {
