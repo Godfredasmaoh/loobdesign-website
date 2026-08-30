@@ -34141,6 +34141,13 @@ input.footer-15__form-input:focus {
   color: var(--at-neutral-100);
   opacity: 0.8;
 }
+.sec-5-portfolio-details-3--quote-blur .sec-5-portfolio-details-3__media img {
+  filter: blur(8px);
+  transform: scale(1.06);
+}
+.sec-5-portfolio-details-3--quote-blur .sec-5-portfolio-details-3__veil {
+  background: rgba(8, 10, 16, 0.45);
+}
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .sec-5-portfolio-details-3 {
     min-height: 600px;
